@@ -1,0 +1,143 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Comic Neue', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Martian+Mono&display=swap');
+
+.App {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  height: 100vh;
+}
+
+.App-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9EDDFF;
+}
+
+.App-bottom{
+  background-color: #A6F6FF;
+  grid-row: 2/all;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-header h1{
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+}
+
+.App-header .agregar{
+  display: flex;
+  padding-top: 20px;
+}
+
+.App-header input {
+  height: 30px;
+  padding: 0 10px;
+  margin-right: 5px;
+}
+
+.App-header button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 34px;
+  width: 100px;
+  background-color: #6499E9;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+.App-header button img {
+  height: 25px;
+}
+
+.App-main{
+  display: flex;
+  justify-content: center;
+}
+
+.App-main .tareas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+  width: 50%;
+  background-color: #6499E9;
+  padding: 10px;
+}
+
+.App-main .tareas .list-tareas {
+  text-align: center;
+}
+
+
+.App-main .tareas .list-tareas ul li {
+  font-size: 1.5rem;
+  margin: 15px 25px;
+}
+
+.App-main .tareas .list-tareas ul li .elemento {
+  width: 110%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-main .tareas .list-tareas ul li .elemento div button{
+  padding: 12px 20px;
+  margin: 4px;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.App-main .tareas .list-tareas ul li .elemento div #editar{
+  background-color: rgb(129, 255, 91);
+}
+
+.App-main .tareas .list-tareas ul li .elemento div #borrar{
+  background-color: rgba(235, 52, 52, 0.863);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 30, 30, 0.5);
+  z-index: 998;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+.modal input{
+  height: 35px;
+  padding: 0 10px;
+}
+
+.modal button{
+  background-color: #24aa24;
+  border-radius: 1em;
+}
